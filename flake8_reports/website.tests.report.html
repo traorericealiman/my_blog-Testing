@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>flake8 violations: website\tests.py</title>
+      <meta http-equiv="Content-Type" value="text/html; charset=UTF-8">
+      <link rel="stylesheet" href="styles.css">
+<script>
+function bindHandler(link) {
+   var code = link.getAttribute('data-code');
+   var key = location.pathname + '#' + code;
+
+   var ul = link.parentNode.querySelector('.details');
+   if (sessionStorage[key] != 'open') {
+      ul.style.display = 'none';
+   }
+   link.addEventListener('click', function (event) {
+      if (!ul.style.display || ul.style.display == 'none') {
+         ul.style.display = 'block';
+         sessionStorage[key] = 'open';
+      } else {
+         ul.style.display = 'none';
+         sessionStorage[key] = 'closed';
+      }
+   });
+}
+
+window.addEventListener('DOMContentLoaded', function () {
+   var links = document.querySelectorAll('#index > li > a');
+   for (var i = 0; i < links.length; i++) {
+      bindHandler(links[i]);
+   }
+});
+</script>
+   </head>
+   <body>
+      <div id="masthead" class="sev-2"></div>
+      <div id="page">
+         <p id="srclink">
+            <a title="View full annotated source"
+               href="website.tests.source.html">
+               <img src="file.svg" alt="&#x2261;">
+            </a></p>
+         <h1>
+            <a href="index.html">
+               <img src="back.svg" alt="&#x2B05;">
+               website\tests.py
+            </a>
+         </h1>
+
+         <ul id="index">
+         
+         <li>
+            <a data-code="E265">
+               <span class="count sev-2">
+                  4
+               </span>
+               <strong>E265:</strong> block comment should start with '# '
+               
+            </a>
+            <ul class="details">
+            <li>
+               
+               <a href="website.tests.source.html#l15">
+                  <tt><i>15</i>         <span class="c1">#Test si SiteInfo est correctement créé avec les valeurs fournies.</span></tt>
+               </a>
+            </li><li>
+               
+               <a href="website.tests.source.html#l23">
+                  <tt><i>23</i>         <span class="c1">#Test si la méthode __str__ retourne le nom du site.</span></tt>
+               </a>
+            </li><li>
+               
+               <a href="website.tests.source.html#l36">
+                  <tt><i>36</i>         <span class="c1">#Test si SocialCount est correctement créé avec les valeurs fournies.</span></tt>
+               </a>
+            </li><li>
+               
+               <a href="website.tests.source.html#l43">
+                  <tt><i>43</i>         <span class="c1">#Test si une valeur incorrecte dans le champ &#39;icones&#39; lève une erreur.</span></tt>
+               </a>
+            </li>
+            </ul>
+         </li>
+         
+         <li>
+            <a data-code="E501">
+               <span class="count sev-2">
+                  2
+               </span>
+               <strong>E501:</strong> line too long (84 > 79 characters)
+               
+                  (and 1 similar)
+               
+            </a>
+            <ul class="details">
+            <li>
+               
+               <p>Line too long (84 > 79 characters):</p>
+               
+               <a href="website.tests.source.html#l38">
+                  <tt><i>38</i>         <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">social_count</span><span class="o">.</span><span class="n">lien</span><span class="p">,</span> <span class="s2">&quot;https://www.facebook.com/example&quot;</span><span class="p">)</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Line too long (108 > 79 characters):</p>
+               
+               <a href="website.tests.source.html#l44">
+                  <tt><i>44</i>         <span class="n">invalid_social_count</span> <span class="o">=</span> <span class="n">SocialCount</span><span class="p">(</span><span class="n">nom</span><span class="o">=</span><span class="s2">&quot;Invalid&quot;</span><span class="p">,</span> <span class="n">lien</span><span class="o">=</span><span class="s2">&quot;https://invalid.com&quot;</span><span class="p">,</span> <span class="n">icones</span><span class="o">=</span><span class="s2">&quot;invalid_icon&quot;</span><span class="p">)</span></tt>
+               </a>
+            </li>
+            </ul>
+         </li>
+         
+         <li>
+            <a data-code="E302">
+               <span class="count sev-2">
+                  1
+               </span>
+               <strong>E302:</strong> expected 2 blank lines, found 1
+               
+            </a>
+            <ul class="details">
+            <li>
+               
+               <a href="website.tests.source.html#l4">
+                  <tt><i>4</i> <span class="k">class</span> <span class="nc">SiteInfoTest</span><span class="p">(</span><span class="n">TestCase</span><span class="p">):</span></tt>
+               </a>
+            </li>
+            </ul>
+         </li>
+         
+         </ul>
+      </div>
+   </body>
+</html>

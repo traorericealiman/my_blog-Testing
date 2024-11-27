@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>flake8 violations: elenizado\tests.py</title>
+      <meta http-equiv="Content-Type" value="text/html; charset=UTF-8">
+      <link rel="stylesheet" href="styles.css">
+<script>
+function bindHandler(link) {
+   var code = link.getAttribute('data-code');
+   var key = location.pathname + '#' + code;
+
+   var ul = link.parentNode.querySelector('.details');
+   if (sessionStorage[key] != 'open') {
+      ul.style.display = 'none';
+   }
+   link.addEventListener('click', function (event) {
+      if (!ul.style.display || ul.style.display == 'none') {
+         ul.style.display = 'block';
+         sessionStorage[key] = 'open';
+      } else {
+         ul.style.display = 'none';
+         sessionStorage[key] = 'closed';
+      }
+   });
+}
+
+window.addEventListener('DOMContentLoaded', function () {
+   var links = document.querySelectorAll('#index > li > a');
+   for (var i = 0; i < links.length; i++) {
+      bindHandler(links[i]);
+   }
+});
+</script>
+   </head>
+   <body>
+      <div id="masthead" class="sev-2"></div>
+      <div id="page">
+         <p id="srclink">
+            <a title="View full annotated source"
+               href="elenizado.tests.source.html">
+               <img src="file.svg" alt="&#x2261;">
+            </a></p>
+         <h1>
+            <a href="index.html">
+               <img src="back.svg" alt="&#x2B05;">
+               elenizado\tests.py
+            </a>
+         </h1>
+
+         <ul id="index">
+         
+         <li>
+            <a data-code="E265">
+               <span class="count sev-2">
+                  15
+               </span>
+               <strong>E265:</strong> block comment should start with '# '
+               
+            </a>
+            <ul class="details">
+            <li>
+               
+               <a href="elenizado.tests.source.html#l8">
+                  <tt><i>8</i> <span class="c1">#TestCategorie</span></tt>
+               </a>
+            </li><li>
+               
+               <a href="elenizado.tests.source.html#l11">
+                  <tt><i>11</i>         <span class="c1">#les données nécessaires pour le test.</span></tt>
+               </a>
+            </li><li>
+               
+               <a href="elenizado.tests.source.html#l18">
+                  <tt><i>18</i>         <span class="c1">#Tester si la catégorie est bien créée </span></tt>
+               </a>
+            </li><li>
+               
+               <a href="elenizado.tests.source.html#l23">
+                  <tt><i>23</i>         <span class="c1">#Tester si le nom de la catégorie est envoyé</span></tt>
+               </a>
+            </li><li>
+               
+               <a href="elenizado.tests.source.html#l26">
+                  <tt><i>26</i> <span class="c1">#TestPublication</span></tt>
+               </a>
+            </li><li>
+               
+               <a href="elenizado.tests.source.html#l29">
+                  <tt><i>29</i>         <span class="c1">#Préparer une catégorie et une publication</span></tt>
+               </a>
+            </li><li>
+               
+               <a href="elenizado.tests.source.html#l39">
+                  <tt><i>39</i>         <span class="c1">#Tester si la publication créée.&quot;&quot;&quot;</span></tt>
+               </a>
+            </li><li>
+               
+               <a href="elenizado.tests.source.html#l44">
+                  <tt><i>44</i>         <span class="c1">#Tester si le slug est généré automatiquement </span></tt>
+               </a>
+            </li><li>
+               
+               <a href="elenizado.tests.source.html#l49">
+                  <tt><i>49</i>         <span class="c1">#Tester si le bon titre est envoyé</span></tt>
+               </a>
+            </li><li>
+               
+               <a href="elenizado.tests.source.html#l52">
+                  <tt><i>52</i> <span class="c1">#TestCommentaire</span></tt>
+               </a>
+            </li><li>
+               
+               <a href="elenizado.tests.source.html#l89">
+                  <tt><i>89</i> <span class="c1">#TestReponseCommentaire</span></tt>
+               </a>
+            </li><li>
+               
+               <a href="elenizado.tests.source.html#l125">
+                  <tt><i>125</i> <span class="c1">#TestEvent</span></tt>
+               </a>
+            </li><li>
+               
+               <a href="elenizado.tests.source.html#l149">
+                  <tt><i>149</i> <span class="c1">#TestCours</span></tt>
+               </a>
+            </li><li>
+               
+               <a href="elenizado.tests.source.html#l170">
+                  <tt><i>170</i> <span class="c1">#TestTextes</span></tt>
+               </a>
+            </li><li>
+               
+               <a href="elenizado.tests.source.html#l188">
+                  <tt><i>188</i> <span class="c1">#TestVideo</span></tt>
+               </a>
+            </li>
+            </ul>
+         </li>
+         
+         <li>
+            <a data-code="E501">
+               <span class="count sev-2">
+                  15
+               </span>
+               <strong>E501:</strong> line too long (117 > 79 characters)
+               
+                  (and 10 similar)
+               
+            </a>
+            <ul class="details">
+            <li>
+               
+               <p>Line too long (117 > 79 characters):</p>
+               
+               <a href="elenizado.tests.source.html#l4">
+                  <tt><i>4</i> <span class="kn">from</span> <span class="nn">elenizado.models</span> <span class="kn">import</span> <span class="n">Categorie</span><span class="p">,</span> <span class="n">Publication</span><span class="p">,</span> <span class="n">Commentaire</span><span class="p">,</span> <span class="n">ReponseCommentaire</span><span class="p">,</span> <span class="n">Evenement</span><span class="p">,</span> <span class="n">Cours</span><span class="p">,</span> <span class="n">Textes</span><span class="p">,</span> <span class="n">Video</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Line too long (98 > 79 characters):</p>
+               
+               <a href="elenizado.tests.source.html#l30">
+                  <tt><i>30</i>         <span class="bp">self</span><span class="o">.</span><span class="n">categorie</span> <span class="o">=</span> <span class="n">Categorie</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">create</span><span class="p">(</span><span class="n">nom</span><span class="o">=</span><span class="s2">&quot;Catégorie Test&quot;</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s2">&quot;Description&quot;</span><span class="p">)</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Line too long (95 > 79 characters):</p>
+               
+               <a href="elenizado.tests.source.html#l45">
+                  <tt><i>45</i>         <span class="n">slug</span> <span class="o">=</span> <span class="s1">&#39;-&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">((</span><span class="n">slugify</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">publication</span><span class="o">.</span><span class="n">titre</span><span class="p">),</span> <span class="n">slugify</span><span class="p">(</span><span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">()</span><span class="o">.</span><span class="n">microsecond</span><span class="p">)))</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Line too long (81 > 79 characters):</p>
+               
+               <a href="elenizado.tests.source.html#l58">
+                  <tt><i>58</i>         <span class="c1"># Créer une publication pour les tests de commentaires avec une catégorie</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Line too long (91 > 79 characters):</p>
+               
+               <a href="elenizado.tests.source.html#l62">
+                  <tt><i>62</i>             <span class="n">image</span><span class="o">=</span><span class="s2">&quot;image/test.jpg&quot;</span><span class="p">,</span>  <span class="c1"># Si vous avez une image ou modifiez selon vos besoins</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Line too long (89 > 79 characters):</p>
+               
+               <a href="elenizado.tests.source.html#l75">
+                  <tt><i>75</i>         <span class="c1"># Créer un commentaire identique pour la même publication par le même utilisateur</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Line too long (85 > 79 characters):</p>
+               
+               <a href="elenizado.tests.source.html#l137">
+                  <tt><i>137</i>         <span class="bp">self</span><span class="o">.</span><span class="n">assertTrue</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">evenement</span><span class="o">.</span><span class="n">slug</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="n">slugify</span><span class="p">(</span><span class="s2">&quot;Conférence Django&quot;</span><span class="p">)))</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Line too long (89 > 79 characters):</p>
+               
+               <a href="elenizado.tests.source.html#l138">
+                  <tt><i>138</i>         <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">evenement</span><span class="o">.</span><span class="n">description</span><span class="p">,</span> <span class="s2">&quot;&lt;p&gt;Description de l&#39;événement&lt;/p&gt;&quot;</span><span class="p">)</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Line too long (93 > 79 characters):</p>
+               
+               <a href="elenizado.tests.source.html#l167">
+                  <tt><i>167</i>         <span class="bp">self</span><span class="o">.</span><span class="n">assertTrue</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">cours</span><span class="o">.</span><span class="n">image</span><span class="o">.</span><span class="n">url</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s2">&quot;/media/cours/image/test_cours.jpg&quot;</span><span class="p">))</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Line too long (93 > 79 characters):</p>
+               
+               <a href="elenizado.tests.source.html#l168">
+                  <tt><i>168</i>         <span class="bp">self</span><span class="o">.</span><span class="n">assertTrue</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">cours</span><span class="o">.</span><span class="n">cours</span><span class="o">.</span><span class="n">url</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s2">&quot;/media/cours/cours/test_cours.pdf&quot;</span><span class="p">))</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Line too long (82 > 79 characters):</p>
+               
+               <a href="elenizado.tests.source.html#l184">
+                  <tt><i>184</i>         <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">texte</span><span class="o">.</span><span class="n">description</span><span class="p">,</span> <span class="s2">&quot;Un texte pour apprendre Python&quot;</span><span class="p">)</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Line too long (94 > 79 characters):</p>
+               
+               <a href="elenizado.tests.source.html#l185">
+                  <tt><i>185</i>         <span class="bp">self</span><span class="o">.</span><span class="n">assertTrue</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">texte</span><span class="o">.</span><span class="n">image</span><span class="o">.</span><span class="n">url</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s2">&quot;/media/textes/image/test_texte.jpg&quot;</span><span class="p">))</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Line too long (90 > 79 characters):</p>
+               
+               <a href="elenizado.tests.source.html#l186">
+                  <tt><i>186</i>         <span class="bp">self</span><span class="o">.</span><span class="n">assertTrue</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">texte</span><span class="o">.</span><span class="n">pdf</span><span class="o">.</span><span class="n">url</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s2">&quot;/media/pdf/textes/test_texte.pdf&quot;</span><span class="p">))</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Line too long (93 > 79 characters):</p>
+               
+               <a href="elenizado.tests.source.html#l202">
+                  <tt><i>202</i>         <span class="bp">self</span><span class="o">.</span><span class="n">assertTrue</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">video</span><span class="o">.</span><span class="n">image</span><span class="o">.</span><span class="n">url</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s2">&quot;/media/video/image/test_video.jpg&quot;</span><span class="p">))</span></tt>
+               </a>
+            </li><li>
+               
+               <p>Line too long (89 > 79 characters):</p>
+               
+               <a href="elenizado.tests.source.html#l203">
+                  <tt><i>203</i>         <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">video</span><span class="o">.</span><span class="n">video</span><span class="p">,</span> <span class="s2">&quot;https://www.youtube.com/watch?v=dQw4w9WgXcQ&quot;</span><span class="p">)</span></tt>
+               </a>
+            </li>
+            </ul>
+         </li>
+         
+         <li>
+            <a data-code="W293">
+               <span class="count sev-2">
+                  14
+               </span>
+               <strong>W293:</strong> blank line contains whitespace
+               
+            </a>
+            <ul class="details">
+            <li>
+               
+               <a href="elenizado.tests.source.html#l21">
+                  <tt><i>21</i>     </tt>
+               </a>
+            </li><li>
+               
+               <a href="elenizado.tests.source.html#l47">
+                  <tt><i>47</i>     </tt>
+               </a>
+            </li><li>
+               
+               <a href="elenizado.tests.source.html#l57">
+                  <tt><i>57</i>         </tt>
+               </a>
+            </li><li>
+               
+               <a href="elenizado.tests.source.html#l94">
+                  <tt><i>94</i>         </tt>
+               </a>
+            </li><li>
+               
+               <a href="elenizado.tests.source.html#l127">
+                  <tt><i>127</i>     </tt>
+               </a>
+            </li><li>
+               
+               <a href="elenizado.tests.source.html#l134">
+                  <tt><i>134</i>     </tt>
+               </a>
+            </li><li>
+               
+               <a href="elenizado.tests.source.html#l147">
+                  <tt><i>147</i>    </tt>
+               </a>
+            </li><li>
+               
+               <a href="elenizado.tests.source.html#l151">
+                  <tt><i>151</i>     </tt>
+               </a>
+            </li><li>
+               
+               <a href="elenizado.tests.source.html#l161">
+                  <tt><i>161</i>     </tt>
+               </a>
+            </li><li>
+               
+               <a href="elenizado.tests.source.html#l173">
+                  <tt><i>173</i>     </tt>
+               </a>
+            </li><li>
+               
+               <a href="elenizado.tests.source.html#l181">
+                  <tt><i>181</i>     </tt>
+               </a>
+            </li><li>
+               
+               <a href="elenizado.tests.source.html#l190">
+                  <tt><i>190</i>     </tt>
+               </a>
+            </li><li>
+               
+               <a href="elenizado.tests.source.html#l198">
+                  <tt><i>198</i>     </tt>
+               </a>
+            </li><li>
+               
+               <a href="elenizado.tests.source.html#l204">
+                  <tt><i>204</i>         </tt>
+               </a>
+            </li>
+            </ul>
+         </li>
+         
+         <li>
+            <a data-code="E302">
+               <span class="count sev-2">
+                  7
+               </span>
+               <strong>E302:</strong> expected 2 blank lines, found 1
+               
+            </a>
+            <ul class="details">
+            <li>
+               
+               <a href="elenizado.tests.source.html#l9">
+                  <tt><i>9</i> <span class="k">class</span> <span class="nc">CategorieModelTest</span><span class="p">(</span><span class="n">TestCase</span><span class="p">):</span></tt>
+               </a>
+            </li><li>
+               
+               <a href="elenizado.tests.source.html#l27">
+                  <tt><i>27</i> <span class="k">class</span> <span class="nc">PublicationModelTest</span><span class="p">(</span><span class="n">TestCase</span><span class="p">):</span></tt>
+               </a>
+            </li><li>
+               
+               <a href="elenizado.tests.source.html#l53">
+                  <tt><i>53</i> <span class="k">class</span> <span class="nc">CommentaireTest</span><span class="p">(</span><span class="n">TestCase</span><span class="p">):</span></tt>
+               </a>
+            </li><li>
+               
+               <a href="elenizado.tests.source.html#l90">
+                  <tt><i>90</i> <span class="k">class</span> <span class="nc">ReponseCommentaireTest</span><span class="p">(</span><span class="n">TestCase</span><span class="p">):</span></tt>
+               </a>
+            </li><li>
+               
+               <a href="elenizado.tests.source.html#l126">
+                  <tt><i>126</i> <span class="k">class</span> <span class="nc">EvenementTest</span><span class="p">(</span><span class="n">TestCase</span><span class="p">):</span></tt>
+               </a>
+            </li><li>
+               
+               <a href="elenizado.tests.source.html#l172">
+                  <tt><i>172</i> <span class="k">class</span> <span class="nc">TextesTest</span><span class="p">(</span><span class="n">TestCase</span><span class="p">):</span></tt>
+               </a>
+            </li><li>
+               
+               <a href="elenizado.tests.source.html#l189">
+                  <tt><i>189</i> <span class="k">class</span> <span class="nc">VideoTest</span><span class="p">(</span><span class="n">TestCase</span><span class="p">):</span></tt>
+               </a>
+            </li>
+            </ul>
+         </li>
+         
+         <li>
+            <a data-code="W291">
+               <span class="count sev-2">
+                  6
+               </span>
+               <strong>W291:</strong> trailing whitespace
+               
+            </a>
+            <ul class="details">
+            <li>
+               
+               <a href="elenizado.tests.source.html#l13">
+                  <tt><i>13</i>             <span class="n">nom</span><span class="o">=</span><span class="s2">&quot;Catégorie Test&quot;</span><span class="p">,</span> </tt>
+               </a>
+            </li><li>
+               
+               <a href="elenizado.tests.source.html#l18">
+                  <tt><i>18</i>         <span class="c1">#Tester si la catégorie est bien créée </span></tt>
+               </a>
+            </li><li>
+               
+               <a href="elenizado.tests.source.html#l20">
+                  <tt><i>20</i>         <span class="bp">self</span><span class="o">.</span><span class="n">assertTrue</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">categorie</span><span class="o">.</span><span class="n">status</span><span class="p">)</span>  </tt>
+               </a>
+            </li><li>
+               
+               <a href="elenizado.tests.source.html#l44">
+                  <tt><i>44</i>         <span class="c1">#Tester si le slug est généré automatiquement </span></tt>
+               </a>
+            </li><li>
+               
+               <a href="elenizado.tests.source.html#l99">
+                  <tt><i>99</i>             <span class="n">image</span><span class="o">=</span><span class="s2">&quot;image/test.jpg&quot;</span><span class="p">,</span>  </tt>
+               </a>
+            </li><li>
+               
+               <a href="elenizado.tests.source.html#l100">
+                  <tt><i>100</i>             <span class="n">categorie</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">categorie</span> </tt>
+               </a>
+            </li>
+            </ul>
+         </li>
+         
+         <li>
+            <a data-code="W292">
+               <span class="count sev-2">
+                  1
+               </span>
+               <strong>W292:</strong> no newline at end of file
+               
+            </a>
+            <ul class="details">
+            <li>
+               
+               <a href="elenizado.tests.source.html#l207">
+                  <tt><i>207</i>         <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">video</span><span class="o">.</span><span class="n">get_video</span><span class="p">,</span> <span class="s2">&quot;dQw4w9WgXcQ&quot;</span><span class="p">)</span></tt>
+               </a>
+            </li>
+            </ul>
+         </li>
+         
+         </ul>
+      </div>
+   </body>
+</html>
